@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Will You Be My Valentine, Fem? 💘</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background music -->
+  <audio id="bgMusic" src="cute-pop.mp3" autoplay loop></audio>
+
+  <!-- Floating hearts -->
+  <div class="hearts"></div>
+
+  <!-- Screen 1: Intro -->
+  <section class="screen active" id="screen1">
+    <h1>Hello Baby! 👋</h1>
+    <p>You’re so pretty! 💖<br>Got a question for you…</p>
+    <button onclick="goToScreen(2)">Continue →</button>
+  </section>
+
+  <!-- Screen 2: Question -->
+  <section class="screen" id="screen2">
+    <h1>Quick question…</h1>
+    <p>Would you like to be my Valentine? 🌹</p>
+
+    <div class="buttons">
+      <button id="yesBtn">Yes 💖</button>
+      <button id="noBtn">No 😅</button>
+    </div>
+  </section>
+
+  <!-- Screen 2b: Are you sure? -->
+  <section class="screen" id="screen2b">
+    <h1>Are you sure? 😏</h1>
+    <p>I think you might actually enjoy saying YES 😉</p>
+    <button onclick="goToScreen(2)">Okay, I’ll think again →</button>
+  </section>
+
+  <!-- Screen 3: Celebration -->
+  <section class="screen" id="screen3">
+    <h1>YAY, Fem!!! 🎉💘</h1>
+    <p>You just made my day 💖<br>Can’t wait to spend Valentine’s with you ❤️</p>
+    <p class="screenshot-text">📸 Screenshot this moment!</p>
+    <canvas id="confetti"></canvas>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
